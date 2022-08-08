@@ -1,6 +1,131 @@
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
 body {
+  background: hsl(225deg, 100%, 94%);
   font-family: "Red Hat Display", sans-serif;
   font-size: 16px;
+  font-weight: 500;
   margin: 0;
+}
+
+h1, h2, p {
+  margin: 0;
+}
+
+.wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background: white;
+  border-radius: 1.2em;
+  box-shadow: 0 5px 30px hsla(245deg, 75%, 52%, 0.25);
+  width: 330px;
+}
+
+.hero-img {
+  border-radius: 1.2em 1.2em 0 0;
+  width: 100%;
+}
+
+.summary {
+  padding: 1.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.summary h1 {
+  color: hsl(223deg, 47%, 23%);
+  font-size: 1.4rem;
+  font-weight: 900;
+}
+.summary p {
+  color: hsl(224deg, 23%, 55%);
+  text-align: center;
+  line-height: 1.5em;
+  max-width: 95%;
+  margin-top: 1.1em;
+}
+
+.plan {
+  background: hsl(225deg, 100%, 98%);
+  border-radius: 0.8em;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 1em;
+  margin-top: 1.4em;
+  display: flex;
+  align-items: center;
+}
+
+.plan-info {
+  color: hsl(224deg, 23%, 55%);
+  font-size: 0.9rem;
+  flex: 1;
+}
+.plan-info h2 {
+  color: hsl(223deg, 47%, 23%);
+  font-size: 0.9rem;
+  font-weight: 900;
+}
+
+.plan-icon {
+  margin-right: 1rem;
+}
+
+.change-plan {
+  color: hsl(245deg, 75%, 52%);
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+.change-plan:hover {
+  color: hsl(245deg, 75%, 70%);
+  text-decoration: none;
+}
+
+.proceed-btn {
+  background: hsl(245deg, 75%, 52%);
+  border: none;
+  border-radius: 0.6rem;
+  box-shadow: 0 15px 20px hsla(245deg, 75%, 52%, 0.25);
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 900;
+  width: 100%;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  cursor: pointer;
+}
+.proceed-btn:hover {
+  background-color: hsl(245deg, 75%, 70%);
+}
+
+.cancel {
+  color: hsl(224deg, 23%, 55%);
+  font-size: 0.9rem;
+  font-weight: 900;
+  text-decoration: none;
+  margin: 1.5rem auto 0.8rem auto;
+}
+.cancel:hover {
+  color: hsl(223deg, 47%, 23%);
+}
+
+@media (min-width: 640px) {
+  body {
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+  .card {
+    width: 400px;
+  }
+  .summary {
+    padding: 2.5em;
+  }
+  .summary h1 {
+    font-size: 1.7rem;
+  }
 }/*# sourceMappingURL=main.css.map */
